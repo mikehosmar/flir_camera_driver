@@ -36,6 +36,8 @@ endif()
 message(STATUS "libSpinnaker library: ${Spinnaker_LIBRARIES}")
 message(STATUS "libSpinnaker include: ${Spinnaker_INCLUDE_DIRS}")
 
+get_filename_component(Spinnaker_LIB_DIR ${Spinnaker_LIBRARIES} DIRECTORY)
+
 
 include_directories(SYSTEM
                     ${Spinnaker_INCLUDE_DIRS}
